@@ -34,18 +34,32 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         child: const Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image(image: AssetImage('assets/images/Shape.png')),
-              Text(
-                '',
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 80.0,
+                ),
+                child: Image(image: AssetImage('assets/images/Shape.png')),
               ),
-              Text(
-                'every.',
-                style: TextStyle(
-                    color: Color.fromRGBO(112, 65, 238, 1),
-                    fontSize: 62,
-                    fontWeight: FontWeight.bold),
+              Padding(
+                padding: EdgeInsets.only(top: 0.0),
+                child: Text(
+                  'every.',
+                  style: TextStyle(
+                      color: Color.fromRGBO(112, 65, 238, 1),
+                      fontSize: 62,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 12.0),
+                child: Text(
+                  'Your everyday personal assistant',
+                  style: TextStyle(
+                      color: Color.fromRGBO(44, 41, 41, 1),
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500),
+                ),
               ),
             ],
           ),
